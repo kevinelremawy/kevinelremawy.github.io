@@ -166,10 +166,13 @@
     }
 
     .hero-title span {
-      background: linear-gradient(120deg, #48b1ff, #b597ff);
-      -webkit-background-clip: text;
-      color: transparent;
-    }
+     background: linear-gradient(120deg, #48b1ff, #b597ff);
+     background-clip: text;
+     -webkit-background-clip: text;
+     color: transparent;
+     -webkit-text-fill-color: transparent;
+}
+
 
     .hero-subtitle {
       font-size: 1.02rem;
@@ -729,7 +732,7 @@
             </div>
             <div class="hero-actions">
               <a href="#projects" class="btn">View Projects</a>
-              <!-- Replace # with actual resume link when hosted -->
+              file:///C:/Users/kevin/Desktop/ElremawyKevinresume.docx.html
               <a href="#" class="btn btn-secondary">Download Résumé</a>
             </div>
             <p class="hero-note">
@@ -754,7 +757,7 @@
                 <li>
                   <span class="hero-bullet"></span>
                   <span>
-                    Hands-on experience across Windows, Linux (Kali, Ubuntu, Debian), macOS, and virtualized environments.
+                    Hands-on experience across Windows, macOS, and virtualized environments.
                   </span>
                 </li>
                 <li>
@@ -810,8 +813,6 @@
             <div class="pill-row">
               <span class="pill">Windows</span>
               <span class="pill">Kali Linux</span>
-              <span class="pill">Ubuntu</span>
-              <span class="pill">Debian</span>
               <span class="pill">macOS</span>
               <span class="pill">VMware</span>
               <span class="pill">VS Code</span>
@@ -854,117 +855,77 @@
 
       <!-- PROJECTS -->
       <section id="projects">
-        <div class="section-header">
-          <h2 class="section-title">Projects</h2>
-          <p class="section-subtitle">
-            A few highlights from cybersecurity, logging, and web development work I’ve done in school and on my own.
-          </p>
-        </div>
+  <div class="section-header">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">
+      A selection of cybersecurity, development, and IT projects I've built or contributed to.
+    </p>
+  </div>
 
-        <div class="projects-grid">
-          <article class="card project-card">
-            <div class="project-tag">Security | Python</div>
-            <h3 class="project-title">Reconnaissance Information Tool</h3>
-            <p>
-              Built a Python-based recon tool designed to gather basic information about target devices and networks,
-              such as IP details and open ports, as a learning exercise for penetration testing workflows.
-            </p>
-            <div class="project-meta">
-              <span>Python</span>
-              <span>Networking</span>
-              <span>CLI Tool</span>
-            </div>
-            <div class="project-footer">
-              Focused on responsible use, safe testing practices, and understanding how attackers collect information so defenders can better protect systems.
-            </div>
-          </article>
+  <div class="projects-grid">
 
-          <article class="card project-card">
-            <div class="project-tag">Cybersecurity | Network Analysis</div>
-            <h3 class="project-title">Directory Traversal Attack Investigation</h3>
-            <p>
-              Analyzed a malicious FTP session using a provided <code>.pcap</code> file to identify a directory traversal attack,
-              determine which files were accessed, and document the impact on confidentiality and integrity.
-            </p>
-            <div class="project-meta">
-              <span>Wireshark</span>
-              <span>FTP</span>
-              <span>Forensics</span>
-            </div>
-            <div class="project-footer">
-              Produced a written report summarizing findings, attack path, and recommendations for hardening the server.
-            </div>
-          </article>
+    <!-- Recon Tool -->
+    <article class="card project-card">
+      <div class="project-tag">Security | Python</div>
+      <h3 class="project-title">Reconnaissance Information Tool</h3>
+      <p>
+        A Python-based recon tool designed to gather basic device and network information, such as IP details and open ports, for educational penetration testing workflows.
+      </p>
+      <div class="project-meta">
+        <span>Python</span>
+        <span>Networking</span>
+        <span>CLI Tool</span>
+      </div>
+      <div class="project-footer">
+        <a href="https://github.com/kevinelremawy/recon-site" class="btn btn-secondary" target="_blank">
+          View on GitHub
+        </a>
+      </div>
+    </article>
 
-          <article class="card project-card">
-            <div class="project-tag">CSIRT | Logging</div>
-            <h3 class="project-title">Splunk Malware Incident Response</h3>
-            <p>
-              Used Splunk to investigate malware-related logs in a simulated environment, identify indicators of compromise,
-              and map attacker activity across affected hosts.
-            </p>
-            <div class="project-meta">
-              <span>Splunk</span>
-              <span>Incident Response</span>
-              <span>Log Analysis</span>
-            </div>
-            <div class="project-footer">
-              Documented artifacts, researched IOCs, and wrote “lessons learned” as if reporting to a real CSIRT team.
-            </div>
-          </article>
+    <!-- Volunteer Portal -->
+    <article class="card project-card">
+      <div class="project-tag">Web App | Team Project</div>
+      <h3 class="project-title">Volunteer Portal Web Application</h3>
+      <p>
+        A collaborative web app featuring admin and volunteer dashboards, event listings, and role-based access. I served as team leader and contributed to UI development and functionality planning.
+      </p>
+      <div class="project-meta">
+        <span>HTML/CSS</span>
+        <span>JavaScript</span>
+        <span>Team Lead</span>
+      </div>
+      <div class="project-footer">
+        <a href="https://github.com/kevinelremawy/volunteer-portal" class="btn btn-secondary" target="_blank">
+          View on GitHub
+        </a>
+      </div>
+    </article>
 
-          <article class="card project-card">
-            <div class="project-tag">Web App | Full Stack</div>
-            <h3 class="project-title">Volunteer Portal Web Application</h3>
-            <p>
-              Led a small team building a Volunteer Portal concept with separate dashboards for admins and volunteers, event listings,
-              and basic authentication and role-based views.
-            </p>
-            <div class="project-meta">
-              <span>HTML/CSS</span>
-              <span>JavaScript</span>
-              <span>Team Lead</span>
-            </div>
-            <div class="project-footer">
-              Focused on clear UI, role separation, and a smooth flow for managing events and volunteer sign-ups.
-            </div>
-          </article>
+    <!-- Flask Backend -->
+    <article class="card project-card">
+      <div class="project-tag">Backend | Automation</div>
+      <h3 class="project-title">Flask Invoice Backend (Windows Server 2016)</h3>
+      <p>
+        A backend API built in Python using Flask to process invoice requests and send email confirmations. Deployed on a Windows Server 2016 VM for testing and integration with a rental site.
+      </p>
+      <div class="project-meta">
+        <span>Python</span>
+        <span>Flask</span>
+        <span>Windows Server</span>
+      </div>
+      <div class="project-footer">
+        <a href="https://github.com/kevinelremawy/reelandrhythm" class="btn btn-secondary" target="_blank">
+          View on GitHub
+        </a>
+      </div>
+    </article>
 
-          <article class="card project-card">
-            <div class="project-tag">Backend | Automation</div>
-            <h3 class="project-title">Flask Invoice Backend on Windows Server</h3>
-            <p>
-              Deployed a basic Python Flask server on a Windows Server 2016 VM to handle invoice requests and email sending
-              for a fictional media rental site.
-            </p>
-            <div class="project-meta">
-              <span>Flask</span>
-              <span>Windows Server</span>
-              <span>Python 3</span>
-            </div>
-            <div class="project-footer">
-              Gained experience with environment setup, testing API endpoints, and handling form data from a front-end.
-            </div>
-          </article>
+  
 
-          <article class="card project-card">
-            <div class="project-tag">Operations | Business</div>
-            <h3 class="project-title">Boutique Operations &amp; Systems Setup</h3>
-            <p>
-              Helped set up software at a bridal boutique for inventory, scheduling, customer information, and sales tracking,
-              connecting business workflows with technology.
-            </p>
-            <div class="project-meta">
-              <span>POS</span>
-              <span>Process Improvement</span>
-              <span>Customer-Facing</span>
-            </div>
-            <div class="project-footer">
-              This experience strengthened my understanding of how tech directly supports day-to-day operations.
-            </div>
-          </article>
-        </div>
-      </section>
+  </div>
+</section>
+
 
       <!-- EXPERIENCE -->
       <section id="experience">
