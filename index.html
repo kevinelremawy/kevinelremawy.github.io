@@ -320,13 +320,13 @@
       background: linear-gradient(135deg, var(--accent), #22c55e);
     }
 
-    .hero-badge-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.6rem;
-    }
+   .hero-badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.6rem;
+}
 
-   .badge {
+.badge {
   padding: 0.55rem 0.7rem;
   border-radius: 0.9rem;
   border: 1px solid rgba(148, 163, 184, 0.36);
@@ -338,22 +338,25 @@
   gap: 0.2rem;
 
   white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: anywhere;
-  overflow: hidden;          /* ⬅ keeps text inside the box */
+  overflow: hidden;
+}
 
-  max-width: 140px;          /* you can bump this up if you want wider badges */
+.badge-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
 }
 
 .badge-value {
   font-weight: 500;
-  line-height: 1.15;
-
-  white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: anywhere;   /* ⬅ lets long strings like emails break */
-  word-break: break-all;     /* ⬅ hard fallback if needed */
+  line-height: 1.25;
+  word-break: normal;
+  overflow-wrap: break-word; /* only break at normal word boundaries */
 }
+
 
 
     .hero-orbit {
@@ -1114,5 +1117,6 @@
   </script>
 </body>
 </html>
+
 
 
