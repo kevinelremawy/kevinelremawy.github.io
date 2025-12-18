@@ -486,30 +486,31 @@
     /* Timeline (Experience & Education) */
 
     .timeline {
-      border-left: 1px solid rgba(148, 163, 184, 0.4);
-      padding-left: 1.4rem;
-      margin-top: 0.3rem;
-    }
+    position: relative;
+    padding-left: 1.8rem;
+    margin-top: 0.3rem;
+  }
+     .timeline-item {
+    position: relative;
+    margin-bottom: 1.6rem;
+  }
 
-    .timeline-item {
-      position: relative;
-      margin-bottom: 1.2rem;
-    }
 
     .timeline-item:last-child {
       margin-bottom: 0;
     }
 
-    .timeline-dot {
-      position: absolute;
-      left: -1.45rem;
-      top: 0.3rem;
-      width: 9px;
-      height: 9px;
-      border-radius: 999px;
-      background: radial-gradient(circle, #ffffff 0%, var(--accent) 35%, #4f46e5 100%);
-      box-shadow: 0 0 12px rgba(72, 177, 255, 0.9);
-    }
+     .timeline-dot {
+    position: absolute;
+    left: -1.35rem;
+    top: 0.45rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background: radial-gradient(circle, #ffffff 0%, var(--accent) 35%, #4f46e5 100%);
+    box-shadow: 0 0 12px rgba(72, 177, 255, 0.9);
+  }
+
 
     .timeline-meta {
       font-size: 0.78rem;
@@ -529,15 +530,16 @@
     }
 
     .timeline-list {
-      font-size: 0.83rem;
-      color: var(--muted);
-      margin-left: 0.8rem;
-      margin-top: 0.15rem;
+      list-style: none;
+      padding-left: 0;
+      margin-left: 0;
+      margin-top: 0.35rem;
+    }
+    
+    .timeline-list li {
+      margin-bottom: 0.3rem;
     }
 
-    .timeline-list li {
-      margin-bottom: 0.15rem;
-    }
 
     /* Contact */
 
@@ -1144,6 +1146,7 @@
   </script>
 </body>
 </html>
+
 
 
 
